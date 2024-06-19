@@ -1,0 +1,33 @@
+﻿cafeteriaSena
+1.0.0.0
+
+winexe
+C#
+.cs
+<<<<<<< HEAD
+C:\Users\Aprendiz\GestionCafeteria\cafeteriaSena\obj\Debug\net8.0-windows\
+=======
+C:\Users\Aprendiz\source\repos\GestionCafeteria\cafeteriaSena\obj\Debug\net8.0-windows\
+>>>>>>> 74993db721890eadf9dc9cf46d0182dd99540d7f
+cafeteriaSena
+none
+false
+TRACE;DEBUG;NET;NET8_0;NETCOREAPP
+<<<<<<< HEAD
+C:\Users\Aprendiz\GestionCafeteria\cafeteriaSena\App.xaml
+2-1395150561
+
+19705008367
+238-1720657109
+Views\MainWindow.xaml;Views\Trabajadores.xaml;
+=======
+C:\Users\Aprendiz\source\repos\GestionCafeteria\cafeteriaSena\App.xaml
+31130175450
+
+201430897743
+238-1720657109
+MainWindow.xaml;Window1.xaml;Window2.xaml;
+>>>>>>> 74993db721890eadf9dc9cf46d0182dd99540d7f
+
+True
+
