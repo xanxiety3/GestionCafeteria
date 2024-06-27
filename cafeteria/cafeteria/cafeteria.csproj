@@ -1,0 +1,67 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="agregar.png" />
+    <None Remove="comestibles 1.png" />
+    <None Remove="editar.png" />
+    <None Remove="eliminar.png" />
+    <None Remove="exit-outline.png" />
+    <None Remove="inventario 1.png" />
+    <None Remove="inventario.png" />
+    <None Remove="logo.png" />
+    <None Remove="logosena.png" />
+    <None Remove="lupa.png" />
+    <None Remove="plantilla.png" />
+    <None Remove="proveedor.png" />
+    <None Remove="proveedores.png" />
+    <None Remove="salir.png" />
+    <None Remove="tendera 1.png" />
+    <None Remove="trabajador.png" />
+    <None Remove="trabajadores.png.png" />
+    <None Remove="venta 1.png" />
+    <None Remove="venta.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="agregar.png" />
+    <Resource Include="comestibles 1.png" />
+    <Resource Include="editar.png" />
+    <Resource Include="eliminar.png" />
+    <Resource Include="exit-outline.png" />
+    <Resource Include="inventario 1.png" />
+    <Resource Include="inventario.png" />
+    <Resource Include="logo.png" />
+    <Resource Include="logosena.png" />
+    <Resource Include="lupa.png" />
+    <Resource Include="plantilla.png" />
+    <Resource Include="proveedor.png" />
+    <Resource Include="proveedores.png" />
+    <Resource Include="salir.png" />
+    <Resource Include="tendera 1.png" />
+    <Resource Include="trabajador.png" />
+    <Resource Include="trabajadores.png.png" />
+    <Resource Include="venta 1.png" />
+    <Resource Include="venta.png" />
+  </ItemGroup>
+
+</Project>

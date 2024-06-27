@@ -1,0 +1,85 @@
+﻿<Window x:Class="cafeteria.Productos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:cafeteria"
+        mc:Ignorable="d"
+         Title="Productos" Height="760" Width="1500" Icon="logo.png"  WindowStartupLocation="CenterScreen"  ResizeMode="NoResize">
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Top" Height="740" Width="1500" Margin="0,10,0,0" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="361*"/>
+            <ColumnDefinition Width="552*"/>
+            <ColumnDefinition Width="587*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="86"/>
+
+            <RowDefinition Height="107*"/>
+            <RowDefinition Height="2*"/>
+
+        </Grid.RowDefinitions>
+
+        <Rectangle Height="94" Stroke="Black" VerticalAlignment="Center" Fill="#FF009E00" Margin="10,0,10,0" Grid.ColumnSpan="3" />
+
+
+        <Rectangle HorizontalAlignment="Center" Height="646" VerticalAlignment="Center" Width="340" Fill="#FF9CA4A8" Grid.Row="1"/>
+
+        <Button Content="Ventas"  HorizontalAlignment="Center" Margin="0,181,0,0" VerticalAlignment="Top" Height="49" Width="237" RenderTransformOrigin="0.496,0.578" Background="#FF009E00" BorderBrush="{x:Null}" Grid.Row="1" FontSize="20"/>
+
+        <Button Content="      Proveedores" HorizontalAlignment="Center" VerticalAlignment="Top" Height="49" Width="238" RenderTransformOrigin="0.5,0.5" OpacityMask="#FF009E00" Background="#FF009E00" BorderBrush="{x:Null}" Margin="0,261,0,0" Grid.Row="1" FontSize="20" />
+
+        <Button Content="      Trabajadores" HorizontalAlignment="Center" VerticalAlignment="Top" Height="49" Width="238" RenderTransformOrigin="0.5,0.5" OpacityMask="#FF009E00" Background="#FF009E00" Margin="0,352,0,0" HorizontalContentAlignment="Center" BorderBrush="{x:Null}" Grid.Row="1" FontSize="20" Name="btnprov"  />
+
+        <Button Content="Salir" HorizontalAlignment="Center" VerticalAlignment="Top" Height="49" Width="238" RenderTransformOrigin="0.5,0.5" OpacityMask="#FF009E00"  Background="#FF009E00" Margin="0,450,0,0" BorderBrush="{x:Null}" Grid.Row="1" FontSize="20"/>
+
+        <Label Content="MENÚ" FontWeight="Black" Height="30" FontSize="16px" VerticalAlignment="Top" Margin="130,115,166,0" Foreground="#FFFFFDFD" Grid.Row="1"/>
+        <Image  Margin="78,-10,114,553" Grid.RowSpan="2" Source="logo.png"></Image>
+        <Image HorizontalAlignment="Left" Height="50" Margin="91,181,0,0" VerticalAlignment="Top" Width="46"  Grid.Row="1" Source="venta 1.png"/>
+        <Image HorizontalAlignment="Left" Height="55" Margin="88,263,0,0" VerticalAlignment="Top" Width="47"  Grid.Row="1" Source="proveedores.png"/>
+        <Image HorizontalAlignment="Left" Height="59" Margin="35,17,0,0" VerticalAlignment="Top" Width="62" Source="comestibles 1.png" Grid.Column="2"/>
+        <Image HorizontalAlignment="Left" Height="60" Margin="351,16,0,0" VerticalAlignment="Top" Width="62" Source="inventario 1.png" Grid.Column="1"/>
+
+        <Image HorizontalAlignment="Left" Height="60" Margin="92,450,0,0" VerticalAlignment="Top" Width="46"  Grid.Row="1" Source="salir.png"/>
+        <Label Content="INVENTARIO" FontWeight="Black" Height="30" FontSize="18" VerticalAlignment="Top" Margin="415,31,0,0" Foreground="#FFFFFDFD" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Width="154" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Image Height="49" Margin="72,352,215,0" VerticalAlignment="Top" Source="tendera 1.png" Grid.Row="1"/>
+        <GroupBox Margin="21,26,30,26" Grid.Row="1" Header="Productos " BorderThickness="2,2,2,2" BorderBrush="Black" FontFamily="Nunito ExtraBold" Grid.ColumnSpan="2" Grid.Column="1"  />
+        <DataGrid  x:Name="datagProductos" Margin="35,54,51,45" Grid.Row="1" Grid.Column="1" ColumnWidth="*"    AutoGenerateColumns="False" CanUserAddRows="False" Grid.ColumnSpan="2" >
+            <DataGrid.Resources>
+                <Style TargetType="{x:Type DataGridCell}">
+                    <Setter Property="HorizontalAlignment" Value="Center" />
+                    <Setter Property="VerticalContentAlignment" Value="Center"/>
+                </Style>
+                <Style TargetType="{x:Type DataGridColumnHeader}">
+                    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                    <Setter Property="FontWeight" Value="Bold"/>
+                </Style>
+            </DataGrid.Resources>
+            <DataGrid.Columns >
+                <DataGridTextColumn Header="Id" Width="*" Binding="{Binding id}" Visibility="Collapsed"  />
+                <DataGridTextColumn Header="Codigo Referencia" Width="*" Binding="{Binding referencia}"/>
+                <DataGridTextColumn Header="Nombre" Width="*" Binding="{Binding producto}"/>
+                <DataGridTextColumn Header="Precio" Width="*" Binding="{Binding valor}"/>
+                <DataGridTextColumn Header="Cantidad" Width="*" Binding="{Binding cantidad}"/>
+                <DataGridTextColumn Header="Descripción" Width="*" Binding="{Binding detalle}"/>
+                <DataGridTextColumn Header="Estado" Width="*" Binding="{Binding estado}"/>
+                <DataGridTextColumn Header="Categoria" Width="*" Binding="{Binding categoria}"/>
+                <DataGridTextColumn Header="Fecha Vencimiento" Width="*" Binding="{Binding fechaVencimiento}"/>
+                <DataGridTemplateColumn Header="Gestion" Width="120">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <Button x:Name="BtonEditar" Margin="5" Width="50" Height="30" CommandParameter="{Binding id}">
+                                    <Image Source="editarproducto.png"/>
+                                </Button>
+                                <Button x:Name="btonEliminar" Margin="5" Width="50" Height="30">
+                                    <Image Source="eliminar-producto63.png"/>
+                                </Button>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
