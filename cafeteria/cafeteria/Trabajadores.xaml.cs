@@ -9,10 +9,12 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
+using System.Windows.Forms;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using static cafeteria.MainWindow;
 
 namespace cafeteria
 {
@@ -126,25 +128,7 @@ namespace cafeteria
 
         }
 
-        private void btnEliminar_Click(object sender, RoutedEventArgs e)
-        {
-            using (var db = new GestioncafeteriaContext())
-            {
-                int idTrabajador = (int)((Button)sender).CommandParameter;
-                var trabajador = db.TTrabajadores.Find(idTrabajador);
-
-                if (trabajador != null)
-                {
-                    var resultado = MessageBox.Show($"¿ Estas seguro de eliminar a {trabajador.Nombre + " " + trabajador.Apellido} ?", "Confirmacion", MessageBoxButton.YesNo, MessageBoxImage.Question);
-                    if (resultado == MessageBoxResult.Yes)
-                    {
-                        db.TTrabajadores.Remove(trabajador);
-                        db.SaveChanges();
-                        llenarTabla();
-                    }
-                }
-            }
-        }
+    
 
         private void txtBusqueda_TextChanged(object sender, TextChangedEventArgs e)
         {
@@ -153,12 +137,65 @@ namespace cafeteria
             numeroResultados();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            this.Close();
-            MainWindow mainWindow = new MainWindow();
-            mainWindow.Show();
-        }
-    }
+        //private void Button_Click(object sender, RoutedEventArgs e)
+        //{
+        //    this.Visibility = Visibility.Collapsed;
+        //    MainWindow mainWindow = new MainWindow();
+        //    mainWindow.Show();
+        //}
 
+        private void dgTrabajadores_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow(ModoOperacion.Editar);
+            
+
+            if (dgTrabajadores.SelectedItem != null)
+            {
+                modeloTrabajador item = (modeloTrabajador)dgTrabajadores.SelectedItem;
+               
+                mainWindow.Show();
+                mainWindow.txtNombre.Text = item.Nombre;
+                mainWindow.txtApellidos.Text = item.Apellido;
+                mainWindow.txtUsuario.Text = item.Usuario;
+                mainWindow.txtContra.Text = item.Contrasenia;
+                mainWindow.txtTelefono.Text = item.Telefono;
+                mainWindow.txtNumdoc.Text = item.Documento;
+                mainWindow.txtDireccion.Text = item.Direccion;
+
+            }
+        }
+
+        private void btnEditar_Click(object sender, RoutedEventArgs e)
+        {
+           
+
+        }
+
+        private void btnguardar_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow main = new MainWindow(ModoOperacion.Guardar);
+            main.ShowDialog();
+
+        }
+
+        //private void btnEliminar_Click(object sender, RoutedEventArgs e)
+        //{
+        //    using (var db = new GestioncafeteriaContext())
+        //    {
+        //        int idProveedor = (int)((Button)sender).CommandParameter;
+        //        var proveedor = db.TProveedores.Find(idProveedor);
+
+        //        if (proveedor != null)
+        //        {
+        //            var resultado = MessageBox.Show($"¿ Estas seguro de eliminar a {proveedor.Nombre} ?", "Confirmacion", MessageBoxButton.YesNo, MessageBoxImage.Question);
+        //            if (resultado == MessageBoxResult.Yes)
+        //            {
+        //                db.TProveedores.Remove(proveedor);
+        //                db.SaveChanges();
+        //                llenarTabla();
+        //            }
+        //        }
+        //    }
+        //}
+    }
 }

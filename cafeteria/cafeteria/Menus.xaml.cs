@@ -26,7 +26,7 @@ namespace cafeteria
 
         private void btnproveedores_Click(object sender, RoutedEventArgs e)
         {
-            Proveedores proveedores = new Proveedores();
+            VistaProveedores proveedores = new VistaProveedores();
             proveedores.Show();
         }
 
@@ -46,6 +46,12 @@ namespace cafeteria
         {
             Productos productos = new Productos();
             productos.Show();
+        }
+
+        private void btnventa_Click(object sender, RoutedEventArgs e)
+        {
+            Ventas ventas = new Ventas();
+            ventas.Show();
         }
     }
 }

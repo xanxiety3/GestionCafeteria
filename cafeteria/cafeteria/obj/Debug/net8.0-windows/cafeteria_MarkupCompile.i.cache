@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Aprendiz\Desktop\cafeteria\cafeteria\obj\Debug\net8.0-windows\
+C:\Users\Aprendiz\source\repos\GestionCafeteria\cafeteria\cafeteria\obj\Debug\net8.0-windows\
 cafeteria
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\Aprendiz\Desktop\cafeteria\cafeteria\App.xaml
-6-408095308
+C:\Users\Aprendiz\source\repos\GestionCafeteria\cafeteria\cafeteria\App.xaml
+8-1070733704
 
-23-1431931507
-238-1720657109
-Login.xaml;MainWindow.xaml;Menus.xaml;Productos.xaml;Proveedores.xaml;Trabajadores.xaml;
+25-1006572373
+238455880526
+Login.xaml;MainWindow.xaml;Menus.xaml;Productos.xaml;Proveedores.xaml;Trabajadores.xaml;Ventas.xaml;VistaProveedores.xaml;
 
 True
 

@@ -16,7 +16,7 @@
         <Image Source="logoSena.png" Stretch="UniformToFill" Margin="120,54,0,0" Width="146" Height="143" VerticalAlignment="Top" HorizontalAlignment="Left"></Image>
         <Label Content="CafeSena" Width="450" Height="129" FontSize="70" VerticalAlignment="Top" FontFamily="Arial" Foreground="White" Margin="630,131,487,0" ></Label>
         <StackPanel Width="800">
-            <Button x:Name="btnventa" Content="Ventas" HorizontalAlignment="Left"  VerticalAlignment="Top" FontSize="30" FontFamily="Arial" Width="200" Height="50" Foreground="#FFFFFEFE" Margin="200,342,0,0" >
+            <Button x:Name="btnventa" Content="Ventas" HorizontalAlignment="Left"  VerticalAlignment="Top" FontSize="30" FontFamily="Arial" Width="200" Height="50" Foreground="#FFFFFEFE" Margin="200,342,0,0" Click="btnventa_Click" >
                 <Button.Template>
                     <ControlTemplate>
                         <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="2" Background="#009E00" CornerRadius="10">

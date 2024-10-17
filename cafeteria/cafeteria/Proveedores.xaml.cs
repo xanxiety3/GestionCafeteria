@@ -98,9 +98,7 @@ namespace cafeteria
 
         private void btnprov_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow mainWindow = new MainWindow();
-            mainWindow.Show();
-            this.Close();
+         
         }
 
         private void btnSalir_Click(object sender, RoutedEventArgs e)

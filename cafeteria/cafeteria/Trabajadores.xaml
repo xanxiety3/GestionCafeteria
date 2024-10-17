@@ -165,7 +165,7 @@
         Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2"
         />
 
-        <DataGrid   x:Name="dgTrabajadores" Margin="103,148,84,196" CanUserAddRows="False" AutoGenerateColumns="False" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2">
+        <DataGrid   x:Name="dgTrabajadores" SelectionMode="Single" Margin="103,148,84,196" CanUserAddRows="False" AutoGenerateColumns="False" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" SelectionChanged="dgTrabajadores_SelectionChanged" >
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Id" Width="*" Binding="{Binding Id}" Visibility="Collapsed">
                     
@@ -189,10 +189,10 @@
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <StackPanel Orientation="Horizontal">
-                                <Button x:Name="btnEditar" Margin="5" Width="50" Height="30">
+                                <Button x:Name="btnEditar" Margin="5" Width="50" Height="30" Click="btnEditar_Click">
                                     <Image Source="editar.png" Width="40" Height="25"></Image>
                                 </Button>
-                                <Button x:Name="btnEliminar" Margin="5" Width="50" Height="30" CommandParameter="{Binding Id}" Click="btnEliminar_Click">
+                                <Button x:Name="btnEliminar" Margin="5" Width="50" Height="30" CommandParameter="{Binding Id}" >
                                     <Image Source="eliminar.png" Width="40" Height="25"></Image>
                                 </Button>
                             </StackPanel>
@@ -212,7 +212,7 @@
            
         </DataGrid>
 
-        <Button HorizontalAlignment="Left" Margin="275,542,0,0" VerticalAlignment="Top" Height="58" Width="200" Grid.Column="2" Grid.Row="1" Click="Button_Click">
+        <Button x:Name="btnguardar" HorizontalAlignment="Left" Margin="275,542,0,0" VerticalAlignment="Top" Height="58" Width="200" Grid.Column="2" Grid.Row="1" Click="btnguardar_Click">
             <StackPanel Orientation="Horizontal">
                 <Label Content="Agregar" Height="43" FontSize="23" FontWeight="Bold" Margin="10" Width="100" VerticalAlignment="Center"></Label>
                 <Image Source="agregar.png" Margin="8" Height="30"></Image>

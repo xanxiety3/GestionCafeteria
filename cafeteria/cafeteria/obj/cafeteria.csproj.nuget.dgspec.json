@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Aprendiz\\Desktop\\cafeteria\\cafeteria\\cafeteria.csproj": {}
+    "C:\\Users\\Aprendiz\\source\\repos\\GestionCafeteria\\cafeteria\\cafeteria\\cafeteria.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Aprendiz\\Desktop\\cafeteria\\cafeteria\\cafeteria.csproj": {
+    "C:\\Users\\Aprendiz\\source\\repos\\GestionCafeteria\\cafeteria\\cafeteria\\cafeteria.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aprendiz\\Desktop\\cafeteria\\cafeteria\\cafeteria.csproj",
+        "projectUniqueName": "C:\\Users\\Aprendiz\\source\\repos\\GestionCafeteria\\cafeteria\\cafeteria\\cafeteria.csproj",
         "projectName": "cafeteria",
-        "projectPath": "C:\\Users\\Aprendiz\\Desktop\\cafeteria\\cafeteria\\cafeteria.csproj",
+        "projectPath": "C:\\Users\\Aprendiz\\source\\repos\\GestionCafeteria\\cafeteria\\cafeteria\\cafeteria.csproj",
         "packagesPath": "C:\\Users\\Aprendiz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aprendiz\\Desktop\\cafeteria\\cafeteria\\obj\\",
+        "outputPath": "C:\\Users\\Aprendiz\\source\\repos\\GestionCafeteria\\cafeteria\\cafeteria\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -49,6 +49,10 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LiNCl5wbFvpXAikt2gR1+g7VZNPU8GLFo5FZGPUvjtx2ido8BAFrxInEQmJUJzuwR1elhcJct87AzMDfYCGOCQ==",
+  "dgSpecHash": "TWE8Y/Wlb+ziCeCpUNdi0fo9xEobdFfM0ms/md62iOfXpaBTvW5WNsuR8Tktj4PKLHKkbSNCWZx7QpgDCc6orw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Aprendiz\\Desktop\\cafeteria\\cafeteria\\cafeteria.csproj",
+  "projectFilePath": "C:\\Users\\Aprendiz\\source\\repos\\GestionCafeteria\\cafeteria\\cafeteria\\cafeteria.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Aprendiz\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Aprendiz\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
@@ -16,9 +16,9 @@
     "C:\\Users\\Aprendiz\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Aprendiz\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.5\\microsoft.data.sqlclient.5.1.5.nupkg.sha512",
     "C:\\Users\\Aprendiz\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\5.1.1\\microsoft.data.sqlclient.sni.runtime.5.1.1.nupkg.sha512",
-    "C:\\Users\\Aprendiz\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.6\\microsoft.entityframeworkcore.8.0.6.nupkg.sha512",
-    "C:\\Users\\Aprendiz\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.6\\microsoft.entityframeworkcore.abstractions.8.0.6.nupkg.sha512",
-    "C:\\Users\\Aprendiz\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.6\\microsoft.entityframeworkcore.analyzers.8.0.6.nupkg.sha512",
+    "C:\\Users\\Aprendiz\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.7\\microsoft.entityframeworkcore.8.0.7.nupkg.sha512",
+    "C:\\Users\\Aprendiz\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.7\\microsoft.entityframeworkcore.abstractions.8.0.7.nupkg.sha512",
+    "C:\\Users\\Aprendiz\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.7\\microsoft.entityframeworkcore.analyzers.8.0.7.nupkg.sha512",
     "C:\\Users\\Aprendiz\\.nuget\\packages\\microsoft.entityframeworkcore.design\\8.0.6\\microsoft.entityframeworkcore.design.8.0.6.nupkg.sha512",
     "C:\\Users\\Aprendiz\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\8.0.6\\microsoft.entityframeworkcore.relational.8.0.6.nupkg.sha512",
     "C:\\Users\\Aprendiz\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\8.0.6\\microsoft.entityframeworkcore.sqlserver.8.0.6.nupkg.sha512",
